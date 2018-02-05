@@ -37,8 +37,9 @@
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		BE5E7067202854A00019ADEE /* RNTMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5E7030202854A00019ADEE /* RNTMapManager.m */; };
-		BEFB7C9D20285926005ABFA1 /* RCTConvert+MapKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFB7C7720285926005ABFA1 /* RCTConvert+MapKit.m */; };
+		BE4EFF7A20285CC200EEE267 /* RCTConvert+MapKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4EFF7620285CC100EEE267 /* RCTConvert+MapKit.m */; };
+		BE4EFF7B20285CC200EEE267 /* RNTMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4EFF7720285CC100EEE267 /* RNTMapView.m */; };
+		BE4EFF7C20285CC200EEE267 /* RNTMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4EFF7920285CC100EEE267 /* RNTMapManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -344,8 +345,10 @@
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
-		BE5E7030202854A00019ADEE /* RNTMapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNTMapManager.m; path = nativeRNComponent/RNTMapManager.m; sourceTree = "<group>"; };
-		BEFB7C7720285926005ABFA1 /* RCTConvert+MapKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RCTConvert+MapKit.m"; path = "nativeRNComponent/RCTConvert+MapKit.m"; sourceTree = "<group>"; };
+		BE4EFF7620285CC100EEE267 /* RCTConvert+MapKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RCTConvert+MapKit.m"; path = "nativeRNComponent/RCTConvert+MapKit.m"; sourceTree = "<group>"; };
+		BE4EFF7720285CC100EEE267 /* RNTMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNTMapView.m; path = nativeRNComponent/RNTMapView.m; sourceTree = "<group>"; };
+		BE4EFF7820285CC100EEE267 /* RNTMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNTMapView.h; path = nativeRNComponent/RNTMapView.h; sourceTree = "<group>"; };
+		BE4EFF7920285CC100EEE267 /* RNTMapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNTMapManager.m; path = nativeRNComponent/RNTMapManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -484,8 +487,10 @@
 		13B07FAE1A68108700A75B9A /* nativeRNComponent */ = {
 			isa = PBXGroup;
 			children = (
-				BEFB7C7720285926005ABFA1 /* RCTConvert+MapKit.m */,
-				BE5E7030202854A00019ADEE /* RNTMapManager.m */,
+				BE4EFF7620285CC100EEE267 /* RCTConvert+MapKit.m */,
+				BE4EFF7920285CC100EEE267 /* RNTMapManager.m */,
+				BE4EFF7820285CC100EEE267 /* RNTMapView.h */,
+				BE4EFF7720285CC100EEE267 /* RNTMapView.m */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -1118,9 +1123,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE4EFF7B20285CC200EEE267 /* RNTMapView.m in Sources */,
+				BE4EFF7A20285CC200EEE267 /* RCTConvert+MapKit.m in Sources */,
+				BE4EFF7C20285CC200EEE267 /* RNTMapManager.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				BEFB7C9D20285926005ABFA1 /* RCTConvert+MapKit.m in Sources */,
-				BE5E7067202854A00019ADEE /* RNTMapManager.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

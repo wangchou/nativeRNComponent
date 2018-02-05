@@ -24,6 +24,10 @@ export default class App extends Component<{}> {
         region={region}
         zoomEnabled={false}
         style={{ flex: 1 }}
+        onRegionChange={(event)=>{
+          const { latitude, longitude } = event.nativeEvent.region;
+          alert(`lat=${latitude}, lng=${longitude}`);
+        }}
       />
     );
   }
