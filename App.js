@@ -14,7 +14,7 @@ const MapView = requireNativeComponent('RNTMap', null);
 export default class App extends Component<{}> {
   render() {
     return (
-      <MapView style={{ flex: 1 }} />
+      <MapView zoomEnabled={false} style={{ flex: 1 }} />
     );
   }
 }
