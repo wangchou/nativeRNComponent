@@ -38,6 +38,7 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		BE5E7067202854A00019ADEE /* RNTMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5E7030202854A00019ADEE /* RNTMapManager.m */; };
+		BEFB7C9D20285926005ABFA1 /* RCTConvert+MapKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFB7C7720285926005ABFA1 /* RCTConvert+MapKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -344,6 +345,7 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		BE5E7030202854A00019ADEE /* RNTMapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNTMapManager.m; path = nativeRNComponent/RNTMapManager.m; sourceTree = "<group>"; };
+		BEFB7C7720285926005ABFA1 /* RCTConvert+MapKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RCTConvert+MapKit.m"; path = "nativeRNComponent/RCTConvert+MapKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -482,6 +484,7 @@
 		13B07FAE1A68108700A75B9A /* nativeRNComponent */ = {
 			isa = PBXGroup;
 			children = (
+				BEFB7C7720285926005ABFA1 /* RCTConvert+MapKit.m */,
 				BE5E7030202854A00019ADEE /* RNTMapManager.m */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -1116,6 +1119,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				BEFB7C9D20285926005ABFA1 /* RCTConvert+MapKit.m in Sources */,
 				BE5E7067202854A00019ADEE /* RNTMapManager.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);

@@ -13,8 +13,18 @@ const MapView = requireNativeComponent('RNTMap', null);
 
 export default class App extends Component<{}> {
   render() {
+    const region = {
+      latitude: 34.746673,
+      longitude: 135.3541299,
+      latitudeDelta: 0.03,
+      longitudeDelta: 0.03,
+    };
     return (
-      <MapView zoomEnabled={false} style={{ flex: 1 }} />
+      <MapView
+        region={region}
+        zoomEnabled={false}
+        style={{ flex: 1 }}
+      />
     );
   }
 }
